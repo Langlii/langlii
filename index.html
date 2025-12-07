@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Geo WebRTC Chat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #0860a3; /* Royal purple background */
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    #join-form, #sign-in-form {
+      text-align: center;
+      margin: 20px;
+    }
+
+    input, select {
+      padding: 10px;
+      margin: 10px 0;
+      width: 300px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      background-color: #fff;
+      color: #6A0DAD;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #6A0DAD;
+      color: #fff;
+    }
+
+    .banner {
+      text-align: center;
+      margin: 20px 0;
+      background-color: #fff;
+      padding: 15px;
+      color: #0d82ad;
+    }
+
+    .ad-banner {
+      background-color: #f9fafa;
+      padding: 10px;
+      font-size: 18px;
+      color: #000;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>WadaHadal</h1>
+
+  <!-- Advertisement Banner -->
+  <div class="ad-banner">
+    <p>🚀 Check out our latest features! <strong>Sign up now and get exclusive offers!</strong></p>
+  </div>
+
+  <!-- Sign In and Guest Form -->
+  <div id="sign-in-form">
+    <h2>Sign In or Join as Guest</h2>
+
+    <!-- Sign-in Options -->
+    <select id="sign-in-select">
+      <option value="email">Email</option>
+      <option value="google">Google</option>
+      <option value="apple">Apple</option>
+    </select>
+
+    <button id="login-btn">Login</button>
+
+    <button id="guest-btn">Continue as Guest</button>
+  </div>
+
+  <!-- Footer Banner -->
+  <div class="banner">
+    <p> 🇸🇴 Connect with Somalis across the globe, from every region of the world!🌍</p>
+  </div>
+
+  <script>
+    document.getElementById("login-btn").addEventListener("click", function () {
+      window.location.href = "login.html"; // Navigate to the login page
+    });
+
+    document.getElementById("guest-btn").addEventListener("click", function () {
+      window.location.href = "guest.html"; // Navigate to the guest region selection page
+    });
+  </script>
+
+</body>
+</html>

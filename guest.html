@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guest - Select Region</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0860a3;
+      color: white;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+    }
+
+    select {
+      padding: 10px;
+      margin: 10px 0;
+      width: 250px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      background-color: #fff;
+      color: #6A0DAD;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+
+    button:hover {
+      background-color: #6A0DAD;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Guest - Select Region</h1>
+
+  <p>Select a region to connect with others:</p>
+  <select id="region-select">
+    <option value="africa">Africa</option>
+    <option value="southeast_asia">Southeast Asia</option>
+    <option value="north_america">North America</option>
+    <option value="south_america">South America</option>
+  </select>
+
+  <button id="join-btn">Join Chat</button>
+
+  <script>
+    document.getElementById('join-btn').addEventListener('click', function () {
+      const region = document.getElementById('region-select').value;
+      window.location.href = `chat.html?region=${region}`; // Navigate to the video chat page
+    });
+  </script>
+
+</body>
+</html>
